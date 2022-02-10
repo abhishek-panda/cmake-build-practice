@@ -1,0 +1,14 @@
+calculator: main.o addition.o division.o print_result.o
+	clang++ main.o addition.o division.o print_result.o -o calculator
+
+main.o: main.cpp
+	clang++ -c main.cpp
+
+addition.o: addition.cpp
+	clang++ -c addition.cpp
+
+division.o: division.cpp
+	clang++ -c division.cpp
+
+print_result.o: print_result.cpp
+	clang++ -c print_result.cpp

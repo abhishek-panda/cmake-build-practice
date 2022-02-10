@@ -1,0 +1,17 @@
+1 - Usually Cpp files are kept inside "src" folder and header files inside 
+    "include" folder.
+
+2- Good practice is to include header files in the respective Cpp fiels.
+
+3- CMakeLists.txt can also be used as a scripting. 
+    cmake -P <filename>
+    e.g The CMakeLists.txt file in the root act as scripting 
+
+
+4 - Installation is basically coping the files from one location to another.
+    While installing a library, the compiled library, header files 
+    and supporting files are copied to /usr/local
+
+5-  Its recommended to copy install files as follows
+    Header files : /usr/local/include/<packgae_name>
+    Targets : /usr/local/lib/<packgae_name>
